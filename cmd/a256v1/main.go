@@ -103,7 +103,6 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-//		fmt.Printf("%x\n", ciphertxt)
 		fmt.Printf("%s", ciphertxt)
 		os.Exit(0)
 	}
@@ -117,7 +116,6 @@ func main() {
 		data := os.Stdin
 		io.Copy(buf, data)
 		scanner := string(buf.Bytes())
-//		str, _ := hex.DecodeString(string(scanner))
 		str := string(scanner)
 		plaintxt, err := eccrypt.DecryptAsn1(private, []byte(str))
 		if err != nil {

@@ -14,6 +14,7 @@ import (
 	"math/big"
 	"os"
 
+	"github.com/pedroalbanese/curves"
 	"github.com/pedroalbanese/eccrypt"
 )
 
@@ -29,19 +30,19 @@ var (
 func main() {
 	flag.Parse()
 
-	if (len(os.Args) < 2) {
-		fmt.Fprintln(os.Stderr,"Usage of",os.Args[0]+":")
+	if len(os.Args) < 2 {
+		fmt.Fprintln(os.Stderr, "Usage of", os.Args[0]+":")
 		flag.PrintDefaults()
 		os.Exit(1)
-	} 
+	}
 
 	var privatekey *ecdsa.PrivateKey
 	var pubkey ecdsa.PublicKey
 	var err error
 	var pubkeyCurve elliptic.Curve
 
-	pubkeyCurve = a256v1()
-	
+	pubkeyCurve = curves.A256v1()
+
 	if *keygen {
 		if *key != "" {
 			privatekey, err = ReadPrivateKeyFromHex(*key)
@@ -127,7 +128,7 @@ func main() {
 }
 
 func ReadPrivateKeyFromHex(Dhex string) (*ecdsa.PrivateKey, error) {
-	c := a256v1()
+	c := curves.A256v1()
 	d, err := hex.DecodeString(Dhex)
 	if err != nil {
 		return nil, err
@@ -158,14 +159,14 @@ func ReadPublicKeyFromHex(Qhex string) (*ecdsa.PublicKey, error) {
 		return nil, errors.New("publicKey is not uncompressed.")
 	}
 	pub := new(ecdsa.PublicKey)
-	pub.Curve = a256v1()
+	pub.Curve = curves.A256v1()
 	pub.X = new(big.Int).SetBytes(q[:32])
 	pub.Y = new(big.Int).SetBytes(q[32:])
 	return pub, nil
 }
 
 func ReadPrivateKeyFromHexX(Dhex string) (*eccrypt.PrivateKey, error) {
-	c := a256v1()
+	c := curves.A256v1()
 	d, err := hex.DecodeString(Dhex)
 	if err != nil {
 		return nil, err
@@ -196,7 +197,7 @@ func ReadPublicKeyFromHexX(Qhex string) (*eccrypt.PublicKey, error) {
 		return nil, errors.New("publicKey is not uncompressed.")
 	}
 	pub := new(eccrypt.PublicKey)
-	pub.Curve = a256v1()
+	pub.Curve = curves.A256v1()
 	pub.X = new(big.Int).SetBytes(q[:32])
 	pub.Y = new(big.Int).SetBytes(q[32:])
 	return pub, nil

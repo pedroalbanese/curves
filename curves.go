@@ -20,7 +20,7 @@ var a128 = &elliptic.CurveParams{
 }
 
 // a128v1() returns a Curve which implements a128v1
-func a128v1() elliptic.Curve { return a128 }
+func A128v1() elliptic.Curve { return a128 }
 
 var a256 = &elliptic.CurveParams{
 	P: strbig("0x00a6d2c41553ba68cfba46aa1281a6b23e95700c68c797367806f96b098d65af57"), // Prime
@@ -33,4 +33,4 @@ var a256 = &elliptic.CurveParams{
 }
 
 // a256v1() returns a Curve which implements a256v1
-func a256v1() elliptic.Curve { return a256 }
+func A256v1() elliptic.Curve { return a256 }

@@ -1,3 +1,5 @@
+// AlbaneseP128/256v1 ECDH Curves
+// 128/256-bit prime field Weierstrass curves y²=x³+ax+b.
 package curves
 
 import "crypto/elliptic"

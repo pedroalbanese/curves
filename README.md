@@ -4,3 +4,4 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/curves)](https://goreportcard.com/report/github.com/pedroalbanese/curves)
 
 128/256-bit prime field Weierstrass curves y²=x³+ax+b.
+![Weierstrass](weierstrass.jpg "Don't click here")

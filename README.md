@@ -6,6 +6,9 @@
 128/256-bit prime field Weierstrass curves y²=x³+ax+b.
 ![Weierstrass](weierstrass.jpg "Don't click here")
 
+### TODO
+- [ ] 512-bit
+
 ## License
 This project is licensed under the ISC License.
 ##### Written for educational purposes. Copyright (c) 2020-2022, ALBANESE Research Lab.

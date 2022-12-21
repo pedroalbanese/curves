@@ -1,5 +1,5 @@
 // AlbaneseP128/256v1
-// 128/256-bit prime field Weierstrass curve y²=x³+ax+b.
+// 128/256-bit prime field Weierstrass curves yÂ²=xÂ³+ax+b.
 package curves
 
 import "crypto/elliptic"

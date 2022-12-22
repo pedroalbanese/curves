@@ -10,6 +10,6 @@
 - [ ] 512-bit
 
 ## License
-This project is licensed under the ISC License.
+This project is licensed under the Unlicense License.
 ##### Written for educational purposes. Copyright (c) 2020-2022, ALBANESE Research Lab.
 

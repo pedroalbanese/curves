@@ -29,6 +29,10 @@ Usage of a256v1:
 ```
 
 ### Examples
+#### Asymmetric keypair generation:
+```sh
+./edgetk -keygen
+```
 #### EC Diffie-Hellman:
 ```sh
 ./edgetk -derive -key $private -public $peerkey

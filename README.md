@@ -28,7 +28,7 @@ Usage of a256v1:
         Remote's side Public key. (for DERIVE)
 ```
 
-### Usage
+### Examples
 #### EC Diffie-Hellman:
 ```sh
 ./edgetk -derive -key $private -public $peerkey

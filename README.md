@@ -35,7 +35,7 @@ Usage of a256v1:
 ```
 #### EC Diffie-Hellman:
 ```sh
-./edgetk -derive -key $private -public $peerkey
+./edgetk -derive -key $private -pub $peerkey
 ```
 #### Asymmetric Encryption/Decryption:
 ```sh

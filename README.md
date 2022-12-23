@@ -11,8 +11,6 @@ Public-key cryptography, or asymmetric cryptography, is the field of cryptograph
 
 In a public-key encryption system, anyone with a public key can encrypt a message, yielding a ciphertext, but only those who know the corresponding private key can decrypt the ciphertext to obtain the original message.
 
-![Weierstrass](weierstrass.jpg "Don't click here")
-
 ### Usage
 ```
 Usage of a256v1:

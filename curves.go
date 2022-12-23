@@ -1,5 +1,5 @@
 // Weierstrass ECDH Curves
-// 128/256-bit prime field Weierstrass curves y²=x³+ax+b.
+// 256-bit prime field Weierstrass curves y²=x³+ax+b.
 package curves
 
 import "crypto/elliptic"
@@ -10,19 +10,6 @@ func strbig(s string) (i *big.Int) {
 	i.SetString(s, 0)
 	return
 }
-
-var a128_1 = &elliptic.CurveParams{
-	P:       strbig("0x008b996f0533f8417866c799fc61310415"), // Prime
-	N:       strbig("0x008b996f0533f84179acba3b5cb109661e"), // Order
-	B:       strbig("0x003ef5802fd915198e7a7173f5acce0545"), // B
-	Gx:      strbig("0x1e95f559b16d399a7300627c6267deb6"),   // Generator X
-	Gy:      strbig("0x0447d6ff6002fda175090cb0fe32ccbe"),   // Generator Y
-	BitSize: 128,
-	Name:    "a128_1",
-}
-
-// a128v1() returns a Curve which implements a128v1
-func A128v1() elliptic.Curve { return a128_1 }
 
 var a256_1 = &elliptic.CurveParams{
 	P:       strbig("0x00a6d2c41553ba68cfba46aa1281a6b23e95700c68c797367806f96b098d65af57"), // Prime

@@ -26,8 +26,8 @@ var (
 	keygen = flag.Bool("keygen", false, "Generate keypair.")
 	key    = flag.String("key", "", "Private/Public key depending on operation.")
 	public = flag.String("pub", "", "Remote's side Public key. (for DERIVE)")
-	enc    = flag.Bool("enc", false, "Encrypt with Publickey.")
-	dec    = flag.Bool("dec", false, "Decrypt with Privatekey.")
+	enc    = flag.Bool("encrypt", false, "Encrypt with Publickey.")
+	dec    = flag.Bool("decrypt", false, "Decrypt with Privatekey.")
 )
 
 func main() {

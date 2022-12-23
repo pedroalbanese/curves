@@ -22,7 +22,7 @@ var a256_1 = &elliptic.CurveParams{
 }
 
 // a256v1() returns a Curve which implements a256v1
-func A256v1() elliptic.Curve { return a256_1 }
+func a256v1() elliptic.Curve { return a256_1 }
 
 var a256_2 = &elliptic.CurveParams{
 	P:       strbig("0x0087d14dc3e41fedf2204981a026bf738ef2f4d8980a76ab396ec734c95aee2475"), // Prime
@@ -35,7 +35,7 @@ var a256_2 = &elliptic.CurveParams{
 }
 
 // a256v2() returns a Curve which implements a256v2
-func A256v2() elliptic.Curve { return a256_2 }
+func a256v2() elliptic.Curve { return a256_2 }
 
 var a256_3 = &elliptic.CurveParams{
 	P:       strbig("0x00d4b31a2747dec22bc779637e32d2ee320aed34d54898050449a6e2128752e2f7"), // Prime
@@ -48,4 +48,18 @@ var a256_3 = &elliptic.CurveParams{
 }
 
 // a256v3() returns a Curve which implements a256v3
-func A256v3() elliptic.Curve { return a256_3 }
+func a256v3() elliptic.Curve { return a256_3 }
+
+var a256_4 = &elliptic.CurveParams{
+	P:       strbig("0x00aeaaaaf2f508c241e276bcd3e14bffbdb2b13442aaf9f7ae3db5df230429470d"), // Prime
+	N:       strbig("0x00aeaaaaf2f508c241e276bcd3e14bffbf3559a60639a77ae4ce6197833beb5d59"), // Order
+	B:       strbig("0x00a422270613ccf4a16db6d89d232c15456df652bd2d61bd98723a72d4acd62571"), // B
+	Gx:      strbig("0x6d3f3c08979119625eb5bb74fe1efd559cfd7ebc52b2da90565fe4456f6eb715"),   // Generator X
+	Gy:      strbig("0x2bac316d4aa70a281f25fc071b17cfb765bb4378a02a747cacfe366aae94543e"),   // Generator Y
+	BitSize: 256,
+	Name:    "a256_4",
+}
+
+// a256v4() returns a Curve which implements a256v4
+func a256v4() elliptic.Curve { return a256_4 }
+

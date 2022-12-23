@@ -24,7 +24,7 @@ Usage of a256v1:
         Private/Public key depending on operation.
   -keygen
         Generate keypair.
-  -public string
+  -pub string
         Remote's side Public key. (for DERIVE)
 ```
 

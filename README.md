@@ -14,7 +14,7 @@ In a public-key encryption system, anyone with a public key can encrypt a messag
 ![Weierstrass](weierstrass.jpg "Don't click here")
 
 ### Usage
-```sh
+```
 Usage of a256v1:
   -decrypt
         Decrypt with Privatekey.

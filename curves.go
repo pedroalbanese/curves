@@ -1,4 +1,4 @@
-// AlbaneseP128/256v1 ECDH Curves
+// Weierstrass ECDH Curves
 // 128/256-bit prime field Weierstrass curves y²=x³+ax+b.
 package curves
 

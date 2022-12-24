@@ -63,3 +63,15 @@ var a256_4 = &elliptic.CurveParams{
 // a256v4() returns a Curve which implements a256v4
 func a256v4() elliptic.Curve { return a256_4 }
 
+var a512_1 = &elliptic.CurveParams{
+	P: strbig("0x00cd11dcb8922891f8bfc798e1d83a33aea771a3c23928d96176793ab2c4a08461bdde65e4743adcc442096524121c6d0d1172b26fc5f519f99e608bbb524f0241"), // Prime
+	N: strbig("0x00cd11dcb8922891f8bfc798e1d83a33aea771a3c23928d96176793ab2c4a084627e3b07f948b9d8c11cac1a9f22ad5b8c2130234d7eaf8bccfeffef51dfd41557"), // Order
+	B: strbig("0x0037ca40a15cfc066fa79c18af8f0d098308e8c26d450317587badf9eb04e302264cd1bb2be56d0abfddc7cad4e2de7f80606777b9b80ec569862fb3ee722a9daa"), // B
+	Gx: strbig("0x13629b0b4eb5c0c5f2e4b433676a83c4cb54df98ef92e96d655ebb0afc712fe518acdb44202b73bb91f2b623042934f4c485e04be9c309df267202015b11af82"),  // Generator X
+	Gy: strbig("0x82761d47453e79e2174950343c69f8566a2b04fc85c717938cccbd40b2c3129c5d6c7746afaedbb57364ee3698b42cd21351acef2394aaa15abf1155e8db3c92"),  // Generator Y
+	BitSize: 512,
+	Name: "a512_1",
+}
+
+// a512v1() returns a Curve which implements a256v1
+func a512v1() elliptic.Curve { return a512_1 }

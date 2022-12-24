@@ -1,5 +1,5 @@
 // Weierstrass ECDH Curves
-// 256-bit prime field Weierstrass curves y^2=x^3+ax+b.
+// 256/512-bit prime field Weierstrass curves y^2=x^3+ax+b.
 package curves
 
 import "crypto/elliptic"
